@@ -1,0 +1,36 @@
+{
+    "plugins": [
+      "prettier",
+      "react",
+      "react-hooks",
+      "simple-import-sort",
+      "jest",
+      "import"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "globals": {
+      "React": "writable"
+    },
+    "env": {
+      "browser": true,
+      "jest/globals": true
+    }
+  }
